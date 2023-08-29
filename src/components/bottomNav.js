@@ -73,11 +73,11 @@ const BottomNav = () => {
             }
           />
           <BottomNavigationAction
-            label="Gallery"
+            label="Announcement"
             icon={
               <IconDisplayer
-                src={"/icons/gallery.svg"}
-                alt={"Gallery"}
+                src={"/icons/announcement.svg"}
+                alt={"announcement"}
                 style={{ width: 30, height: 30 }}
               />
             }

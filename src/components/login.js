@@ -10,10 +10,18 @@ import ToggleBtn from "./custom/toggleButton";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const navigate = useNavigate();
-    const handleLogin = () => {
-        navigate("pages")
-    }
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/pages");
+  };
+
+  const changeTheme = () => {
+    document.body.style.background = "var(--bgsvg1)";
+    document.body.style.height = "100%";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  }
   return (
     <>
       <Grid
@@ -41,7 +49,7 @@ const Login = () => {
               <Avatar
                 alt="Sriman Kotaru"
                 src="https://i.pravatar.cc/150?img=3"
-                sx={{ width: 150, height: 150 }}
+                sx={{ width: 150, height: 150, mt: 2 }}
               />
             </div>
             <Typography
@@ -68,6 +76,12 @@ const Login = () => {
                 textTransform: "capitalize",
               }}
             >
+              <img
+                src="./icons/google.svg"
+                width={15}
+                height={15}
+                style={{ marginRight: 10 }}
+              />
               Login with Google
             </Button>
           </Card>

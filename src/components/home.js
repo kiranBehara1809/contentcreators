@@ -16,7 +16,7 @@ const Home = () => {
             alignItems : "center"
           }}
         >
-          <Typography variant="h6" sx={{left : 5, top : 5, p : 1}}>
+          <Typography variant="h4" sx={{left : 5, top : 5, p : 1}}>
             KB
           </Typography>
           <AccountAvatar

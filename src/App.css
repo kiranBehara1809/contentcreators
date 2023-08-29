@@ -3,26 +3,56 @@
   --bgsvg2 : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23d5a2ff' fill-opacity='1' d='M0,32L24,58.7C48,85,96,139,144,181.3C192,224,240,256,288,250.7C336,245,384,203,432,192C480,181,528,203,576,202.7C624,203,672,181,720,186.7C768,192,816,224,864,224C912,224,960,192,1008,186.7C1056,181,1104,203,1152,218.7C1200,235,1248,245,1296,218.7C1344,192,1392,128,1416,96L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
   --bgsvg3 : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffbca2' fill-opacity='1' d='M0,32L24,58.7C48,85,96,139,144,181.3C192,224,240,256,288,250.7C336,245,384,203,432,192C480,181,528,203,576,202.7C624,203,672,181,720,186.7C768,192,816,224,864,224C912,224,960,192,1008,186.7C1056,181,1104,203,1152,218.7C1200,235,1248,245,1296,218.7C1344,192,1392,128,1416,96L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
   --bgsvg4 : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffa2db' fill-opacity='1' d='M0,32L24,58.7C48,85,96,139,144,181.3C192,224,240,256,288,250.7C336,245,384,203,432,192C480,181,528,203,576,202.7C624,203,672,181,720,186.7C768,192,816,224,864,224C912,224,960,192,1008,186.7C1056,181,1104,203,1152,218.7C1200,235,1248,245,1296,218.7C1344,192,1392,128,1416,96L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
-  --bgsvg5 : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23383934' fill-opacity='1' d='M0,32L24,58.7C48,85,96,139,144,181.3C192,224,240,256,288,250.7C336,245,384,203,432,192C480,181,528,203,576,202.7C624,203,672,181,720,186.7C768,192,816,224,864,224C912,224,960,192,1008,186.7C1056,181,1104,203,1152,218.7C1200,235,1248,245,1296,218.7C1344,192,1392,128,1416,96L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  --bgsvg5 : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23989895' fill-opacity='1' d='M0,32L24,58.7C48,85,96,139,144,181.3C192,224,240,256,288,250.7C336,245,384,203,432,192C480,181,528,203,576,202.7C624,203,672,181,720,186.7C768,192,816,224,864,224C912,224,960,192,1008,186.7C1056,181,1104,203,1152,218.7C1200,235,1248,245,1296,218.7C1344,192,1392,128,1416,96L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
 }
 body{
   background-color: rgb(234, 230, 230) !important;
   /* background-color: rgb(108, 107, 107) !important; */
-  background: var(--bgsvg3);
+  background: var(--bgsvg2);
   height: 100%;
-  color: #383934;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .glassCard{
-  background: rgba(255, 255, 255, 0.4) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  backdrop-filter: blur(20px) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px) !important;
   border-radius: 20px !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
 }
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+} */
+
+@media only screen and (max-width: 899px) {
+    .journalCard {
+      width: 93dvw;
+    }
+  }
+@media only screen and (min-width: 900px) {
+    .journalCard {
+      width: 50dvw;
+    }
+  }
 
 ::-webkit-scrollbar {
   width: 10px;
