@@ -1,14 +1,13 @@
-const IconDisplayer = (props) => {
-    return (
-      <>
-        <img
-          src={props.src}
-          alt={props.alt}
-          loading="lazy"
-          style={props.style}
-        />
-      </>
-    );
-}
+import { useCallback, useEffect, useState } from "react";
 
-export default IconDisplayer
+const IconDisplayer = (props) => {
+  const imageBasePath = window.location.protocol + "//" + window.location.host;
+  const [imgsrc, setImgSrc] = useState(imageBasePath + props?.src);
+  return (
+    <>
+      <img src={imgsrc} alt={props.alt} style={props.style} />
+    </>
+  );
+};
+
+export default IconDisplayer;

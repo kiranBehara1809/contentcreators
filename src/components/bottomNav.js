@@ -6,7 +6,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-
 const BottomNav = () => {
     const [ value, setValue ] = useState(0)
     const navigate = useNavigate()
@@ -19,7 +18,7 @@ const BottomNav = () => {
           bottom: 0,
           left: 0,
           right: 0,
-          background: "rgba(255,255,255,0.4) !important",
+          background: "rgba(255,255,255,0.2) !important",
           backdropFilter: "blur(50px)",
         }}
         elevation={3}
@@ -31,47 +30,45 @@ const BottomNav = () => {
           onChange={(event, newValue) => {
             setValue(newValue);
             switch (newValue) {
-                case 0 : {
-                    navigate("vehicles")
-                    break;
-                }
-                case 1 : {
-                    navigate("ads");
-                    break;
-                }
-                case 2 : {
-                    navigate("gallery");
-                    break;
-                }
-                case 3 : {
-                    navigate("trips");
-                    break;
-                }
-                case 4 : {
-                    navigate("about");
-                    break;
-                }
-                default : {
-                   navigate("vehicles"); 
-                }
+              case 0: {
+                navigate("journal");
+                break;
+              }
+              case 1: {
+                navigate("journal");
+                break;
+              }
+              case 2: {
+                navigate("journal");
+                break;
+              }
+              case 3: {
+                navigate("journal");
+                break;
+              }
+              default: {
+                navigate("journal");
+              }
             }
           }}
         >
           <BottomNavigationAction
-            label="Vehicles"
+            label="Journal"
             icon={
               <IconDisplayer
-                src={"./icons/bmw.svg"}
-                style={{ width: 20, height: 20 }}
+                src={"/icons/dairy.svg"}
+                alt={"Journal"}
+                style={{ width: 30, height: 30 }}
               />
             }
           />
           <BottomNavigationAction
-            label="Ads"
+            label="Meet"
             icon={
               <IconDisplayer
-                src={"./icons/ads.svg"}
-                style={{ width: 20, height: 20 }}
+                src={"/icons/gmeet.svg"}
+                alt={"Meet"}
+                style={{ width: 30, height: 30 }}
               />
             }
           />
@@ -79,23 +76,15 @@ const BottomNav = () => {
             label="Gallery"
             icon={
               <IconDisplayer
-                src={"./icons/gallery.svg"}
-                style={{ width: 20, height: 20 }}
-              />
-            }
-          />
-          <BottomNavigationAction
-            label="Trips"
-            icon={
-              <IconDisplayer
-                src={"./icons/trips.svg"}
-                style={{ width: 20, height: 20 }}
+                src={"/icons/gallery.svg"}
+                alt={"Gallery"}
+                style={{ width: 30, height: 30 }}
               />
             }
           />
           <BottomNavigationAction
             label="About"
-            icon={<AccountAvatar sx={{ width: 20, height: 20 }} />}
+            icon={<AccountAvatar sx={{ width: 30, height: 30 }} />}
           />
         </BottomNavigation>
       </Paper>

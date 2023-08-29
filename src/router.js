@@ -1,8 +1,8 @@
 import { Navigate, useRoutes } from "react-router-dom";
 import Login from "./components/login";
 import Home from "./components/home";
-import VehicleHome from "./components/vehicles/v_home";
 import PageNotFound from "./components/pageNotFound";
+import Journal from "./components/journal";
 
 export default function Router() {
   const routes = useRoutes([
@@ -18,25 +18,9 @@ export default function Router() {
           element: <h1>random</h1>,
         },
         {
-          path: "vehicles",
-          element: <VehicleHome />,
-        },
-        {
-          path: "ads",
-          element: <VehicleHome />,
-        },
-        {
-          path: "trips",
-          element: <VehicleHome />,
-        },
-        {
-          path: "about",
-          element: <VehicleHome />,
-        },
-        {
-          path: "gallery",
-          element: <VehicleHome />,
-        },
+          path : "journal",
+          element : <Journal />
+        }
       ],
     },
   ]);
