@@ -18,6 +18,7 @@ const Journal = () => {
           mt: 2,
           width: "100dvw",
           display: "flex",
+          justifyContent : "center",
           flexWrap :"wrap"
         }}
       >
@@ -25,7 +26,7 @@ const Journal = () => {
           return (
             <Grid
               item
-              xs={sm_up ? 6 : 12}
+              xs={sm_up ? 8 : 12}
               key={x}
               sx={{ pl: 1, pb: 2, pr: 2, pt: 2, mb: 3, height: 300 }}
             >

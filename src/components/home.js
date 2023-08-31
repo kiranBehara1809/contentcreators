@@ -2,8 +2,12 @@ import { Avatar, Fab, Typography } from "@mui/material";
 import BottomNav from "./bottomNav";
 import AccountAvatar from "./custom/accountAvatar";
 import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { auth } from "../firebase";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const { headerText } = useSelector((state) => state.headerText);
   return (
     <>
       <div style={{ height: "100dvh", width: "100dvw", overflow: "hidden" }}>
@@ -11,13 +15,13 @@ const Home = () => {
           style={{
             width: "100dvw",
             display: "flex",
-            height : "auto",
+            height: "auto",
             justifyContent: "space-between",
-            alignItems : "center"
+            alignItems: "center",
           }}
         >
-          <Typography variant="h4" sx={{left : 5, top : 5, p : 1}}>
-            KB
+          <Typography variant="h5" sx={{ left: 5, top: 5, p: 1 }}>
+            {headerText  || 'welcome '+ auth?.currentUser?.displayName}
           </Typography>
           <AccountAvatar
             sx={{
@@ -31,7 +35,7 @@ const Home = () => {
         </div>
         <div
           style={{
-            marginTop : 10,
+            marginTop: 5,
             paddingLeft: 5,
             paddingRight: 5,
           }}
