@@ -8,6 +8,7 @@ const AccountAvatar = (props) => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event) => {
+      console.log(auth?.currentUser?.photoURL)
       setAnchorEl(event.currentTarget);
     };
 
@@ -44,7 +45,7 @@ const AccountAvatar = (props) => {
             horizontal: "left",
           }}
         >
-          <Box>
+          <Box className="glassCard">
             <List>
               <ListItem
                 disablePadding
@@ -76,18 +77,15 @@ const AccountAvatar = (props) => {
                   <ListItemText
                     primary={
                       auth?.currentUser?.emailVerified
-                        ? "Email Verified"
+                        ? `☑️  Email Verified`
                         : "Not Verified"
                     }
                   />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton>
-                  <ListItemText
-                    primary={"Logout"}
-                    onClick={() => handleLogout()}
-                  />
+                <ListItemButton onClick={() => handleLogout()}>
+                  <ListItemText primary={"Logout"} />
                 </ListItemButton>
               </ListItem>
             </List>

@@ -122,6 +122,16 @@ const Login = () => {
                 sx={{ display: "flex", justifyContent: "space-evenly" }}
               >
                 <Avatar
+                  alt="YouTube"
+                  src="./icons/youtube1.svg"
+                  onClick={() =>
+                    handleSocialMedia(
+                      "https://youtube.com/@bayyasunnyyadav?sub_confirmation=1"
+                    )
+                  }
+                  sx={{ width: 30, height: 30, mt: 2, cursor: "pointer" }}
+                />
+                <Avatar
                   alt="Instagram"
                   src="./icons/instagram.svg"
                   onClick={() =>
@@ -132,11 +142,11 @@ const Login = () => {
                   sx={{ width: 30, height: 30, mt: 2, cursor: "pointer" }}
                 />
                 <Avatar
-                  alt="YouTube"
-                  src="./icons/youtube1.svg"
+                  alt="Threads"
+                  src="./icons/threads.svg"
                   onClick={() =>
                     handleSocialMedia(
-                      "https://youtube.com/@bayyasunnyyadav?sub_confirmation=1"
+                      "https://www.threads.net/@bayyasunnyyadav"
                     )
                   }
                   sx={{ width: 30, height: 30, mt: 2, cursor: "pointer" }}
